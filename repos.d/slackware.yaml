@@ -91,11 +91,12 @@
     - name: [slackware,patches,extra]
       fetcher: FileFetcher
       parser: SlackwarePackagesParser
-      url: 'http://slackware.uk/slackwarearm/slackwarearm-14.2/{source}/PACKAGES.TXT'
+      #url: 'http://slackware.uk/slackwarearm/slackwarearm-14.2/{source}/PACKAGES.TXT'
+      url: 'https://ftp.halifax.rwth-aachen.de/slackwarearm/slackwarearm-14.2/{source}/PACKAGES.TXT'
       subrepo: '{source}'
   repolinks:
-    - desc: Slackware Home
-      url: http://www.slackware.com/
+    - desc: Slackware ARM / AARCH64
+      url: http://arm.slackware.com/
   tags: [ all, production, slackware ]
 
 - name: slackwarearm_current
@@ -110,9 +111,10 @@
     - name: [slackware,patches,extra]
       fetcher: FileFetcher
       parser: SlackwarePackagesParser
-      url: 'http://slackware.uk/slackwarearm/slackwarearm-current/{source}/PACKAGES.TXT'
+      #url: 'http://slackware.uk/slackwarearm/slackwarearm-current/{source}/PACKAGES.TXT'
+      url: 'https://ftp.halifax.rwth-aachen.de/slackwarearm/slackwarearm-current/{source}/PACKAGES.TXT'
       subrepo: '{source}'
   repolinks:
-    - desc: Slackware Home
-      url: http://www.slackware.com/
+    - desc: Slackware ARM / AARCH64
+      url: http://arm.slackware.com/
   tags: [ all, production, slackware ]
